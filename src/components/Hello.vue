@@ -14,8 +14,10 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
   .hello {
+    display: flex;
+    flex-direction: column;
     color: #666;
     h4 {
       font-weight: 400;

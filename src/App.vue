@@ -1,32 +1,37 @@
 <template>
-  <div>
+  <div id="app">
     <h2>Hello, {{message}}</h2>
-    <hello />
+    <my-nav></my-nav>
+    <router-view class="app-content"></router-view>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello.vue';
+import MyNav from './components/MyNav.vue';
 
 export default {
   name: 'App',
-  components: { Hello },
+  components: { MyNav },
   data() {
     return {
-      message: 'Parcel!',
+      message: 'Vue!',
     };
   },
 };
 </script>
 
 <style lang="less">
-  div {
+  div#app {
     margin: 0 auto;
     width: 800px;
     
     & > h2 {
       text-align: center;
       margin-bottom: 50px;
+    }
+    & > .app-content {
+      text-align: center;
+      padding: 100px;
     }
   }
 </style>
