@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h2>Hello, {{message}}</h2>
+    <h2 v-if="message==2">Hello, {{message}}</h2>
     <my-nav></my-nav>
     <router-view class="app-content"></router-view>
   </div>
@@ -11,7 +11,7 @@ import MyNav from './components/MyNav.vue';
 
 export default {
   name: 'App',
-  components: { MyNav },
+  components: { MyNav, },
   data() {
     return {
       message: 'Vue!',

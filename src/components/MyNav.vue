@@ -5,7 +5,7 @@
   </ul>
 </template>
 
-<<script>
+<script>
 export default {
   name: 'MyNav',
 };
@@ -23,7 +23,9 @@ export default {
       padding: 16px 0;
       text-align: center;
       &.selected {
+        //set selected color
         background-color: darkslategrey;
+        color: white;
       }
     }
   }
