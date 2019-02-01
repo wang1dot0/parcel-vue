@@ -19,14 +19,15 @@ export default {
 };
 </script>
 
-<style>
+<style lang="less">
   div {
     margin: 0 auto;
     width: 800px;
-  }
-  h2 {
-    text-align: center;
-    margin-bottom: 50px;
+    
+    & > h2 {
+      text-align: center;
+      margin-bottom: 50px;
+    }
   }
 </style>
 

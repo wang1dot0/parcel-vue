@@ -14,19 +14,19 @@ export default {
 };
 </script>
 
-<style>
+<style lang="less">
   .hello {
     color: #666;
-  }
-  h4 {
-    font-weight: 400;
-  }
-  ul {
-    list-style-type: circle;
-    padding-inline-start: 20px;
-  }
-  ul li:nth-of-type(1) {
-    color: green;
+    h4 {
+      font-weight: 400;
+    }
+    ul {
+      list-style-type: circle;
+      padding-inline-start: 20px;
+
+      & > li:nth-of-type(1) {
+        color: green;
+      }
+    }
   }
 </style>
-
