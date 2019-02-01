@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h2 v-if="message==2">Hello, {{message}}</h2>
+    <h2>Hello, {{ msg }}</h2>
     <my-nav></my-nav>
     <router-view class="app-content"></router-view>
   </div>
@@ -14,7 +14,7 @@ export default {
   components: { MyNav, },
   data() {
     return {
-      message: 'Vue!',
+      msg: 'Vue!',
     };
   },
 };
