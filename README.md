@@ -4,11 +4,20 @@ Functions: vue-router, vuex, less, babelrc, eslint, HMR & express.
 
 ## How to use
 ```
+# install dependency
 npm install
-npm run dev               // run HMR
-npm run start             // run express server
-npm run build             // production mode
-npm run lint              // code eslint
+
+# run HMR
+npm run dev
+
+# run express server
+npm run start
+
+# production mode
+npm run build
+
+# code eslint
+npm run lint              
 ```
 
 **Cannot support IE < 11 becauseof parcel not polyfill `Object.assign`**
