@@ -8,13 +8,15 @@
   "scripts": {
     "dev": "parcel ./public/index.html --open",
     "build": "rimraf dist && parcel build ./public/index.html --no-source-maps",
-    "start": "node server NODE_ENV=development",
+    "start": "cross-env NODE_ENV=development node server",
     "lint": "eslint src --ext .js --ext .vue"
   },
   "dependencies": {
     "autoprefixer": "^9.4.7",
+    "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "less": "^3.9.0",
+    "morgan": "^1.9.1",
     "parcel-bundler": "^1.11.0",
     "postcss-modules": "^1.4.1",
     "vue": "^2.5.22",
